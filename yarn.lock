@@ -2569,6 +2569,10 @@ loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.2.5:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
+localStorage-info:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/localStorage-info/-/localStorage-info-1.0.0.tgz#4a7b0f996b1d5bff5851c48601969c6db9caee65"
+
 lodash._baseassign@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/lodash._baseassign/-/lodash._baseassign-3.2.0.tgz#8c38a099500f215ad09e59f1722fd0c52bfe0a4e"
