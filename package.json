@@ -1,7 +1,7 @@
 {
   "name": "storex2",
   "author": "Cam Song",
-  "version": "1.0.0-pre",
+  "version": "1.0.0-pre4",
   "description": "localStorage enhancer with sugar functions and LRU cache",
   "main": "build/index.js",
   "keywords": [
@@ -50,7 +50,7 @@
     "karma-mocha": "^1.2.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.8.0",
-    "storex2": "^1.0.0",
+    "localStorage-info": "^1.0.0",
     "mocha": "^3.1.2",
     "webpack": "^1.13.2"
   }
