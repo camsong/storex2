@@ -278,9 +278,6 @@ try {
 }
 storex.enabled = !storex.disabled;
 
-export default storex;
-
-
 // export as global function
 /*eslint-disable */
 let local;
@@ -297,3 +294,5 @@ if (typeof global !== 'undefined') {
 }
 local.storex = storex;
 /* eslint-enable */
+
+module.exports = storex;

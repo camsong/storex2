@@ -1,8 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 /* global localStorage */
 var storage = localStorage;
 
@@ -295,11 +292,8 @@ try {
 }
 storex.enabled = !storex.disabled;
 
-exports.default = storex;
-
 // export as global function
 /*eslint-disable */
-
 var local = void 0;
 if (typeof global !== 'undefined') {
   local = global;
@@ -314,3 +308,5 @@ if (typeof global !== 'undefined') {
 }
 local.storex = storex;
 /* eslint-enable */
+
+module.exports = storex;
