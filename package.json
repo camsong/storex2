@@ -4,7 +4,7 @@
     "registry": "http://registry.npm.alibaba-inc.com"
   },
   "author": "Cam Song",
-  "version": "1.0.0-pre4",
+  "version": "1.0.0-pre5",
   "description": "localStorage enhancer with sugar functions and LRU cache",
   "main": "build/index.js",
   "keywords": [
