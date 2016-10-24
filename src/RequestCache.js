@@ -103,7 +103,7 @@ function generateCacheObj(url, params = {}, identityKeyFunc) {
     key: '', // url + params
     useStore: true, // 是否使用缓存
     identityKey: '', // 判断缓存是否过期的 key。默认为 storeVersion + userId + updateTime
-    expire: new Date().getTime(), // 缓存过期的绝对时间点
+    expire: Date.now(), // 缓存过期的绝对时间点，默认为马上过期
     fallbackToCache: !!params.__fallbackToCache, // 如果为 true，则缓存实际上永不过期，用于当请求出错时使用缓存
   };
 
