@@ -162,7 +162,11 @@ function setCache(url, params = {}, identityKeyFunc, data) {
       !isEmpty(data.data) &&
       params.dtMaxAge == null && params.dtUpdateTime == null && params.dtExpireTime == null
     ) {
-      params = merge({ dtMaxAge: data.interval * 1000 }, params);
+      // 实时数据缓存算法是：取 interval 的三分之一且在 5秒到 5分钟之间
+      let maxAge = Math.round(data.interval / 3);
+      if (maxAge < 5) { maxAge = 5; }
+      if (maxAge > 300) { maxAge = 300; }
+      params = merge({ dtMaxAge: maxAge * 1000 }, params);
     }
 
     const cacheObj = generateCacheObj(url, params, identityKeyFunc);
